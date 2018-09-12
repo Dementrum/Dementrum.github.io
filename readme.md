@@ -1,1 +1,1 @@
-**Демо**: [dementrum.github.io](https://dementrum.github.io/app/index.html)
+**Демо**: [dementrum.github.io](https://dementrum.github.io/build/index.html)
