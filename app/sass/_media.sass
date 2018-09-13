@@ -6,14 +6,24 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+
 // ≥992px
 +media-breakpoint-down(md)
+  .main-menu
+    display: none
+    padding: 20px
+  .mobile-menu-button
+    display: block 
+ 
 
 // ≥768px
 +media-breakpoint-down(sm)
+ 
 
 // ≥576px
 +media-breakpoint-down(xs)
+
+
 
 
 /*==========  Mobile First  ==========*/
@@ -21,11 +31,17 @@
 // ≤576px
 +media-breakpoint-up(sm)
 
+
 // ≤768px
 +media-breakpoint-up(md)
+  .mobile-menu-button
+    display: block 
 
 // ≤992px
 +media-breakpoint-up(lg)
+  .mobile-menu-button
+    display: none
+  
 
 // ≤1200px
 +media-breakpoint-up(xl)
