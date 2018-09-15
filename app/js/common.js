@@ -2,7 +2,7 @@
 $(function() {
 $('.logo-litera').each(function() {
 	var ths = $(this);
-	ths.html(ths.html().replace('O', '<span>O</span>'));
+	ths.html(ths.html().replace('O', '<span class="litera">O</span>'));
 	});
 
 	// search

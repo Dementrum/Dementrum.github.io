@@ -1,0 +1,126 @@
+.ad
+  width: 100%
+  overflow: hidden
+  display: block
+  text-align: center
+.top-ad
+  margin-bottom: $gutter
+.container-fluid
+  min-width: 1346px
+  padding: 0 $gutter
+
+  section 
+  background-color: #fafafa
+  padding:
+    top: $gutter
+    bottom: $gutter
+
+.item-tittle
+  min-height: 340px
+  &-headline
+    text-transform: uppercase
+    margin: 0
+    font-size: 19px
+    font-weight: 800 
+    line-height: 1.25
+  &-content 
+    position: absolute
+    bottom: 0
+    padding: 40px
+    color: #ffffff
+    z-index: 1
+.item-underline
+  &:hover
+    text-decoration: underline 
+.pattern
+  display: block
+  position: relative
+  background-color: $dark
+  &::before
+    content: ''
+    transition: opacity .25s ease, top .25s ease, left .25s ease, bottom .25s ease, right .25s ease
+    z-index: 1
+    position: absolute
+    border: 1px solid #fff
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    opacity: 0
+  &:hover
+    &::before
+      opacity: 0.2
+      top: 10px
+      left: 10px
+      right: 10px
+      bottom: 10px
+    .overlay
+      &:before
+        opacity: 0.75
+
+  .overlay
+    position: relative
+    display: block
+    &::before
+      content: ''
+      background-color: $dark
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      opacity: 0.55
+      transition: opacity .25s ease
+    &:hover
+      &::before
+        opacity: 0.75
+.item-social
+  margin-top: 10px
+  .fa
+    font-size: 12px
+    margin-right: 5px
+.item-comments
+  display: inline-block
+  margin-right: 20px
+  &-count
+    font-size: 12px
+    display: inline-block
+    position: relative
+    &::after
+      content: ""
+      font-family: fontawesome
+      display: inline-block
+      font-size: 12px
+      position: absolute
+      top: 35%
+      margin: 0 10px 0 10px
+      font-size: 5px
+      opacity: 0.25
+
+.likely-custom
+  display: inline-flex
+  font-size: 12px
+  .likely-buttom
+    padding-left: 15px
+.likely__widget
+  padding: 0 4px 0 20px
+  position: relative
+  cursor: pointer
+  border: 1px solid #fff
+  border-radius: 2px
+  margin: 6px 2px 0
+.likely__counter
+  display: none
+.likely__icon
+  fill: #fff
+  svg
+    width: 11px
+    height: auto
+    position: absolute
+    top: 4px
+    left: 4px
+  > *
+    display: inline-block
+
+
+        
