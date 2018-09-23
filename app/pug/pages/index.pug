@@ -1,7 +1,12 @@
 extends ../layout/main
-
+include ../mixins/mixins
 block variables
-	- var title = 'Главная страница'
+	- var title = 'GEEKTOP - Новости из мира IT'
 
 block content
-	include ../section/general-section1
+	.container-fluid
+			.ad.top-ad
+				img.img-responsive(src='img/ad-horizontal.jpg', alt='alt')
+	include ../section/general-section/top-col-md-6
+	include ../section/general-section/top2-col-md-4
+

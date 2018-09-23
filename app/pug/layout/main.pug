@@ -1,4 +1,6 @@
 block variables
+- let title_G_Pages = ['На стол знаменитой московской студии поставили два новых девайса', 'НОВЕНЬКИЕ НАУШНИКИ СТИЛИЗОВАННЫЕ ПОД ОБЬЕКТИВЫ КАМЕР ПОЛОЖИЛИ НА ГРЯЗНЫЙ ПОДДОН', 'MACBOOK ГРИША НАШЕЛ СВОЙ ДОМ НА НИЖНЕЙ ПОЛКЕ САМОДЕЛЬНОГО КОРОБА ДЛЯ ОБУВИ']
+-let count = [25, 31, 26, 27]
 
 doctype html
 html(lang="en")
@@ -16,7 +18,7 @@ html(lang="en")
 		meta(name='theme-color', content='202225')
 		// Custom Browsers Color End
 		link(rel='stylesheet', href='css/main.min.css')
-		title GEEKTOP - Новости из мира IT
+		title #{title} 
 		body
 			.wrapper
 				include ../modules/header
@@ -24,5 +26,6 @@ html(lang="en")
 				include ../modules/footer
 			block script
 				script(src="js/scripts.min.js")
+			
 				
 				

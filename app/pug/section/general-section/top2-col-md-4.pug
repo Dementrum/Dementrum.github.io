@@ -1,0 +1,12 @@
+-let num = ['3', '4', '5']
+.row.no-gutters
+  - for (let i = 0; i < 3; i++)
+      .col-md-4
+        .pattern
+          .overlay.item-tittle(style=`background: url(img/blog/electronics/${num[i]}.jpg); background-size: cover; background-position: center`)
+            .item-tittle-content
+              h3.item-tittle-headline 
+                a.item-underline(href='#') #{title_G_Pages[i]}
+              +item-social(count[i], `img/blog/electronics/${num[i]}.jpg`, title_G_Pages[i])
+
+          
