@@ -1,12 +1,25 @@
--let num = ['3', '4', '5']
-.row.no-gutters
-  - for (let i = 0; i < 3; i++)
-      .col-md-4
-        .pattern
-          .overlay.item-tittle(style=`background: url(img/blog/electronics/${num[i]}.jpg); background-size: cover; background-position: center`)
-            .item-tittle-content
-              h3.item-tittle-headline 
-                a.item-underline(href='#') #{title_G_Pages[i]}
-              +item-social(count[i], `img/blog/electronics/${num[i]}.jpg`, title_G_Pages[i])
+//- - let nums = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12']
+//- .row.no-gutters
+//-   - for (let i = 0; i < 3; i++)
+//-       .col-md-4
+//-         .pattern
+//-           .overlay.item-tittle(style=`background: url(img/blog/electronics/${num[i]}.jpg); background-size: cover; background-position: center`)
+//-             .item-tittle-content
+//-               h3.item-tittle-headline 
+//-                 a.item-underline(href='#') #{title_G_Pages[i]}
+//-               +item-social(count.pop(),`img/blog/electronics/${num[i]}.jpg`, title_G_Pages[0])
 
-          
+section.clients
+  .container
+    h2.section-title Наши клиенты
+    .row.justify-content-center
+    - for (let i = 0; i < 12; i++)   
+      .col-5.col-sm-6.col-md-4.col-lg-3
+        .clients__img
+          - for (let nums = 0; nums < 12; i++) 
+            img(src=`img/clients/logo${nums[i]}.png`, alt=`logo-${nums[i]}`)
+
+      
+       
+        
+                  
