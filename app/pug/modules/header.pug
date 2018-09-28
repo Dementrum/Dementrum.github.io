@@ -11,20 +11,8 @@ header.top-line
         input(type='text', name='q', placeholder='Поиск по сайту...')
   .mobile-menu-button
     i.fa.fa-bars  Меню
-  nav.main-menu.top-menu
-    ul.categories
-      li.categories__item.active
-        a.categories__link(href="#") Электроника
-      li.categories__item
-        a.categories__link(href="#") Новости IT
-      li.categories__item
-        a.categories__link(href="#") Обзоры
-      li.categories__item
-        a.categories__link(href="#") Лайфхаки
-      li.categories__item
-        a.categories__link(href="#") DIY
-      li.categories__item
-        a.categories__link(href="#") О сайте
+  +nav('categories', ['Электроника', 'Новости IT', 'Обзоры', 'Лайфхаки', 'DIY', 'О сайте'], 0)
+   
    
 
     
