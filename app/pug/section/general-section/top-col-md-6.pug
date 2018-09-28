@@ -1,21 +1,17 @@
+- let num_top = ['1', '2']
+- let title_top = ['Новые смартфоны покорили поклонников мобильной индустрии', 'MACBOOK ФЕДЯ ЗАНЯЛ СВОЕ ПОЧЕТНОЕ МЕСТО НА БАБУШКИНОМ СТОЛЕ ИЗ 60-Х']
+- let count_top = [40, 31 ]
 section.first-section.clearfix
 	.row.no-gutters
 		- for (let i = 0; i < 2; i++)	
 			.col-md-6
 				.pattern
-					.overlay.item-tittle(style=`background: url(img/blog/electronics/${num[i]}.jpg); background-size: cover;background-position: center;`)
+					.overlay.item-tittle(style=`background: url(img/blog/electronics/${num_top[i]}.jpg); background-size: cover;background-position: center;`)
 					.item-tittle-content
 						h3.item-tittle-headline
-							a.item-underline(href='#') Новые смартфоны покорили поклонников мобильной индустрии
-						+item-social(count[i], 'img/blog/electronics/1.jpg', 'Новые смартфоны покорили поклонников мобильной индустрии')
-			
-			//- .col-md-6
-			//- 	.pattern
-			//- 		.overlay.item-tittle(style='background: url(img/blog/electronics/2.jpg); background-size: cover;	background-position: center')
-			//- 		.item-tittle-content
-			//- 			h3.item-tittle-headline
-			//- 				a.item-underline(href='#') MACBOOK ФЕДЯ ЗАНЯЛ СВОЕ ПОЧЕТНОЕ МЕСТО НА БАБУШКИНОМ СТОЛЕ ИЗ 60-Х
-			//- 			+item-social('25', 'img/blog/electronics/2.jpg','MACBOOK ФЕДЯ ЗАНЯЛ СВОЕ ПОЧЕТНОЕ МЕСТО НА БАБУШКИНОМ СТОЛЕ ИЗ 60-Х')
+							a.item-underline(href='#') #{title_top[i]}
+						+item-social(count_top[i], 'img/blog/electronics/1.jpg',title_top[i] )
+
 			
 
 	
