@@ -16,15 +16,15 @@ html(lang="en")
 		meta(name='theme-color', content='202225')
 		// Custom Browsers Color End
 		link(rel='stylesheet', href='css/main.min.css')
-
+		link(rel='stylesheet', href='libs/font-awesome/css/font-awesome.min.css')
 		title #{title} 
-		body
-			.wrapper
-				include ../modules/header
-				block content
-				include ../modules/footer
-			block script
-				script(src="./js/scripts.min.js")
+	body
+		.wrapper
+			include ../modules/header
+			block content
+			include ../modules/footer
+		block script
+			script(src="./js/scripts.min.js")
 			
 				
 				

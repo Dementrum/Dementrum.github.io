@@ -13,7 +13,9 @@
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png"><!-- Custom Browsers Color Start-->
     <meta name="theme-color" content="202225"><!-- Custom Browsers Color End-->
     <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
     <title>GEEKTOP - Новости из мира IT </title>
+</head>
 
 <body>
     <div class="wrapper">
@@ -38,13 +40,15 @@
                 </ul>
             </nav>
         </header>
-        <div class="container-fluid">
-            <div class="ad top-ad"><img class="img-responsive" src="img/ad-horizontal.jpg" alt="alt"></div>
-            <section class="first-section clearfix">
+        <div class="ad top-ad">
+            <div class="container-fluid"><img class="img-responsive" src="img/ad-horizontal.jpg" alt="alt"></div>
+        </div>
+        <section class="first-section clearfix">
+            <div class="container-fluid">
                 <div class="row no-gutters">
                     <div class="col-md-6">
                         <div class="pattern">
-                            <div class="overlay item-tittle" style="background: url(img/blog/electronics/1.jpg); background-size: cover;background-position: center;"></div>
+                            <div class="overlay item-tittle" style="background-image: url(img/blog/electronics/1.jpg);"></div>
                             <div class="item-tittle-content">
                                 <h3 class="item-tittle-headline"><a class="item-underline" href="#">Новые смартфоны покорили поклонников мобильной индустрии</a></h3>
                                 <div class="item-social">
@@ -61,7 +65,7 @@
                     </div>
                     <div class="col-md-6">
                         <div class="pattern">
-                            <div class="overlay item-tittle" style="background: url(img/blog/electronics/2.jpg); background-size: cover;background-position: center;"></div>
+                            <div class="overlay item-tittle" style="background-image: url(img/blog/electronics/2.jpg);"></div>
                             <div class="item-tittle-content">
                                 <h3 class="item-tittle-headline"><a class="item-underline" href="#">MACBOOK ФЕДЯ ЗАНЯЛ СВОЕ ПОЧЕТНОЕ МЕСТО НА БАБУШКИНОМ СТОЛЕ ИЗ 60-Х</a></h3>
                                 <div class="item-social">
@@ -80,7 +84,7 @@
                 <div class="row no-gutters">
                     <div class="col-md-4">
                         <div class="pattern">
-                            <div class="overlay item-tittle" style="background: url(img/blog/electronics/3.jpg); background-size: cover; background-position: center">
+                            <div class="overlay item-tittle" style="background-image: url(img/blog/electronics/3.jpg);">
                                 <div class="item-tittle-content">
                                     <h3 class="item-tittle-headline"> <a class="item-underline" href="#">На стол знаменитой московской студии поставили два новых девайса</a></h3>
                                     <div class="item-social">
@@ -98,7 +102,7 @@
                     </div>
                     <div class="col-md-4">
                         <div class="pattern">
-                            <div class="overlay item-tittle" style="background: url(img/blog/electronics/4.jpg); background-size: cover; background-position: center">
+                            <div class="overlay item-tittle" style="background-image: url(img/blog/electronics/4.jpg);">
                                 <div class="item-tittle-content">
                                     <h3 class="item-tittle-headline"> <a class="item-underline" href="#">НОВЕНЬКИЕ НАУШНИКИ СТИЛИЗОВАННЫЕ ПОД ОБЬЕКТИВЫ КАМЕР ПОЛОЖИЛИ НА ГРЯЗНЫЙ ПОДДОН</a></h3>
                                     <div class="item-social">
@@ -116,7 +120,7 @@
                     </div>
                     <div class="col-md-4">
                         <div class="pattern">
-                            <div class="overlay item-tittle" style="background: url(img/blog/electronics/5.jpg); background-size: cover; background-position: center">
+                            <div class="overlay item-tittle" style="background-image: url(img/blog/electronics/5.jpg);">
                                 <div class="item-tittle-content">
                                     <h3 class="item-tittle-headline"> <a class="item-underline" href="#">MACBOOK ГРИША НАШЕЛ СВОЙ ДОМ НА НИЖНЕЙ ПОЛКЕ САМОДЕЛЬНОГО КОРОБА ДЛЯ ОБУВИ</a></h3>
                                     <div class="item-social">
@@ -133,19 +137,53 @@
                         </div>
                     </div>
                 </div>
-            </section>
-            <section>
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-md-8"></div>
-                        <div class="col-md-4"></div>
+            </div>
+        </section>
+        <section class="second-section">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-8">
+                        <h2 class="item-news-title">Новости IT</h2>
+                        <div class="row news-wrap">
+                            <div class="col-md-6">
+                                <div class="pattern"><a class="overlay item-news" style="background-image: url(img/blog/news/6.jpg);">
+                                        <div class="item-news-content">
+                                            <h3 class="item-tittle-middle">Золотистый iPhone предыдущего поколения положили на тыкву</h3><span class="date">21/06/2018</span>
+                                        </div>
+                                    </a></div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="pattern"><a class="overlay item-news" style="background-image: url(img/blog/news/7.jpg);">
+                                        <div class="item-news-content">
+                                            <h3 class="item-tittle-middle">Программист из Ставрополя посадил зрение после 22-ч лет работы</h3><span class="date">21/06/2018</span>
+                                        </div>
+                                    </a></div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="pattern"><a class="overlay item-news" style="background-image: url(img/blog/news/8.jpg);">
+                                        <div class="item-news-content">
+                                            <h3 class="item-tittle-middle">Обнаружена первая в мире белая виниловая пластинка без дорожек</h3><span class="date">21/06/2018</span>
+                                        </div>
+                                    </a></div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="pattern"><a class="overlay item-news" style="background-image: url(img/blog/news/9.jpg);">
+                                        <div class="item-news-content">
+                                            <h3 class="item-tittle-middle">Человек впервые в мире сделал снимок в море</h3><span class="date">21/06/2018</span>
+                                        </div>
+                                    </a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="aside-box"><img class="img-responsive" src="img/vk-witget.jpg" alt="alt"></div>
+                        <div class="aside-box"><img class="img-responsive" src="img/ad-cube.jpg" alt="alt"></div>
                     </div>
                 </div>
-            </section>
-        </div>
+            </div>
+        </section>
     </div>
     <script src="./js/scripts.min.js"></script>
 </body>
-</head>
 
 </html>

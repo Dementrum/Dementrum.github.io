@@ -4,9 +4,9 @@ block variables
 	- var title = 'GEEKTOP - Новости из мира IT'
 
 block content
-	.container-fluid
 		.ad.top-ad
-			img.img-responsive(src='img/ad-horizontal.jpg', alt='alt')
+			.container-fluid
+				img.img-responsive(src='img/ad-horizontal.jpg', alt='alt')
 		include ../section/first-section/top-col-md-6
 		include ../section/second-section/middle-col-md-8
 

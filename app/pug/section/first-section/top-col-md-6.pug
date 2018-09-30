@@ -1,17 +1,19 @@
 - let num_top = ['1', '2']
 - let title_top = ['Новые смартфоны покорили поклонников мобильной индустрии', 'MACBOOK ФЕДЯ ЗАНЯЛ СВОЕ ПОЧЕТНОЕ МЕСТО НА БАБУШКИНОМ СТОЛЕ ИЗ 60-Х']
 - let count_top = [40, 31 ]
+
 section.first-section.clearfix
-	.row.no-gutters
-		- for (let i = 0; i < 2; i++)	
-			.col-md-6
-				.pattern
-					.overlay.item-tittle(style=`background: url(img/blog/electronics/${num_top[i]}.jpg); background-size: cover;background-position: center;`)
-					.item-tittle-content
-						h3.item-tittle-headline
-							a.item-underline(href='#') #{title_top[i]}
-						+item-social(count_top[i], 'img/blog/electronics/1.jpg',title_top[i] )
-	include ./top2-col-md-4				
+	.container-fluid
+		.row.no-gutters
+			- for (let i = 0; i < 2; i++)	
+				.col-md-6
+					.pattern
+						.overlay.item-tittle(style=`background-image: url(img/blog/electronics/${num_top[i]}.jpg);`)
+						.item-tittle-content
+							h3.item-tittle-headline
+								a.item-underline(href='#') #{title_top[i]}
+							+item-social(count_top[i], 'img/blog/electronics/1.jpg',title_top[i] )
+		include ./top2-col-md-4				
 
 			
 
