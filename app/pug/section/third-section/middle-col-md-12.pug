@@ -1,9 +1,17 @@
-section.third-section
-  .col-md-12.reviews-wrap
-    .container-fluid
-      .row
-        h2.item-reviews-title Обзоры
-          .row
-            - for (let i = 0; i < 4; i++)	
-              .col-md-6
-                .pattern
+- let num_reviews   = ['10', '11', '12', '13']
+- let title_reviews = ['Новый смартфон с функцией настольного пылесоса всколыхнул сообщество гиков по всему миру']
+- let count_reviews = [40, 31, 22, 61 ]
+- let data_reviews  = ['01/09/2018', '10/09/2018', '15/08/2018', '19/10/2018']
+
+section.third-section.dark-section
+  .container-fluid
+    h2
+      a(href="#") Обзоры
+    .row
+      - for (let i = 0; i < 4; i++)	
+        .col-md-3
+          .col-item.col-item-dark
+            a(href="")
+              img.img-responsive.img-width.overlay(src=`img/blog/reviews/${num_reviews[i]}.jpg`, alt='alt', title=` ${title_reviews[0]}`) 
+            +item-social-mod(count_reviews[i], data_reviews[i], title_reviews[0]) 
+            

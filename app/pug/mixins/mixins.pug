@@ -19,3 +19,11 @@ mixin item-social(count, data, dataTitle)
       .facebook(title='Поделиться в facebook') Facebook
       .twitter(title='Поделиться в twitter') Twitter
 
+mixin item-social-mod(count, data, Title)
+  .item-social
+    .item-comments(title='Kоличество комментариев')
+      span.date  #{data}
+      i.fa.fa-comments
+      a.item-comments-count(href='#disqus_thread') #{count} 
+  h4
+    a(href="") #{Title} 

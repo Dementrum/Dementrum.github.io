@@ -1,6 +1,6 @@
-- let num_middle = ['6', '7', '8', '9']
+- let num_news = ['6', '7', '8', '9']
 
-- let title_middle1 = ['Золотистый iPhone предыдущего поколения положили на тыкву', 'Программист из Ставрополя посадил зрение после 22-ч лет работы','Обнаружена первая в мире белая виниловая пластинка без дорожек', 'Человек впервые в мире сделал снимок в море']
+- let title_news1 = ['Золотистый iPhone предыдущего поколения положили на тыкву', 'Программист из Ставрополя посадил зрение после 22-ч лет работы','Обнаружена первая в мире белая виниловая пластинка без дорожек', 'Человек впервые в мире сделал снимок в море']
 
 - let aside_img = ['vk-witget', 'ad-cube']
 
@@ -13,12 +13,12 @@ section.second-section
           - for (let i = 0; i < 4; i++)	
             .col-md-6
               .pattern
-                a.overlay.item-news(style=`background-image: url(img/blog/news/${num_middle[i]}.jpg);`)
+                a.overlay.item-news(style=`background-image: url(img/blog/news/${num_news[i]}.jpg);`)
                   .item-news-content
-                    h3.item-tittle-middle #{title_middle1[i]}
+                    h3.item-tittle-middle #{title_news1[i]}
                     span.date 21/06/2018
       .col-md-4
         - for (let i = 0; i < 2; i++)
           .aside-box
-            img.img-responsive(src=`img/${aside_img[i]}.jpg`, alt='alt')
+            img.img-responsive(src=`img/${aside_img[i]}.jpg`, alt='alt')  
         
