@@ -26,5 +26,13 @@ $('.search-wrap').click(function(e){
 	$('.mobile-menu-button').click(function() {
 		$('.mobile-menu').stop().slideToggle();
 	});
+// hover with image in link
+$('.col-item-dark').hover(function() {
+		ths = $(this);
+		lnk = ths.closest('.col-item-dark').find('h4 a');
+		lnk.addClass('hover');
+	}, function () {
+		lnk.removeClass('hover');
+	}); 
 
 });

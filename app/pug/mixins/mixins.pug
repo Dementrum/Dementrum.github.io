@@ -22,8 +22,8 @@ mixin item-social(count, data, dataTitle)
 mixin item-social-mod(count, data, Title)
   .item-social
     .item-comments(title='Kоличество комментариев')
-      span.date  #{data}
+      span.date.date-reviews #{data}
       i.fa.fa-comments
       a.item-comments-count(href='#disqus_thread') #{count} 
-  h4
-    a(href="") #{Title} 
+  h4.title-news-desc
+    a(href="#") #{Title} 
