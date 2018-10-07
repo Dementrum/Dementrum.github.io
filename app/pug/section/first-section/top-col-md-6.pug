@@ -8,9 +8,9 @@ section.first-section.clearfix
 			- for (let i = 0; i < 2; i++)	
 				.col-md-6
 					.pattern
-						.overlay.item-tittle(style=`background-image: url(img/blog/electronics/${num_top[i]}.jpg);`)
-						.item-tittle-content
-							h3.item-tittle-headline
+						.overlay.item-title(style=`background-image: url(img/blog/electronics/${num_top[i]}.jpg);`)
+						.item-title-content
+							h3.item-title-headline
 								a.item-underline(href='#') #{title_top[i]}
 							+item-social(count_top[i], `img/blog/electronics/${num_top[i]}`,title_top[i] )
 		include ./top2-col-md-4				

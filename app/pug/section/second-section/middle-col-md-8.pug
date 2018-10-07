@@ -8,14 +8,15 @@ section.second-section
   .container-fluid
     .row
       .col-md-8
-        h2.item-news-title Новости IT
+        h2.item-news-title 
+          a(href="#") Новости IT
         .row.news-wrap
           - for (let i = 0; i < 4; i++)	
             .col-md-6
               .pattern
-                a.overlay.item-news(style=`background-image: url(img/blog/news/${num_news[i]}.jpg);`)
+                a(href="").overlay.item-news(style=`background-image: url(img/blog/news/${num_news[i]}.jpg);`)
                   .item-news-content
-                    h3.item-tittle-middle #{title_news1[i]}
+                    h3.item-title-middle #{title_news1[i]}
                     span.date 21/06/2018
       .col-md-4
         - for (let i = 0; i < 2; i++)

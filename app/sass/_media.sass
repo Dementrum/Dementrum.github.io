@@ -12,20 +12,19 @@
   .main-menu
     display: none
     padding: 20px
+  
   .mobile-menu-button
     display: block 
-  .item-tittle
+  
+  .item-title
     &-content
       padding: 40px 30px
+  
   .third-section
     padding: $gutter 0 30px
     .row:last-child
-      margin-bottom: 0
-      padding-bottom: 0
-      border-bottom: 0
+      margin-bottom: -30px
 
-  
- 
 
 // ≥768px
 +media-breakpoint-down(sm)
@@ -33,19 +32,38 @@
     padding: 
       top: $gutter/2
       bottom: $gutter/2
+  
   .container-fluid
     padding: 0 $gutter/2
+  
   .top-ad
     margin:$gutter/2 0
+  
   .no-gutters
     .pattern 
       margin-bottom: $gutter/2
+  
   .item-news
     margin: $gutter/2 0 0
+
+  .col-item
+    margin-bottom: $gutter
+    margin-top: 0
+    padding-bottom: $gutter
+    border-bottom: 1px solid rgba(#fff, .05)
+    .item-social
+      margin-bottom: 5px
+
+  .third-section
+    > div > div > div:first-of-type
+      margin-top: 12px
+    .item-comments, h4 
+      margin: 0 $gutter
+
+
+
   
 
-
- 
 
 // ≥576px
 +media-breakpoint-down(xs)
@@ -55,6 +73,7 @@
   .search-wrap
     .search
       padding-right: $gutter/2
+
 
 
 
