@@ -12,9 +12,9 @@ section.second-section
           a(href="#") Новости IT
         .row.news-wrap
           - for (let i = 0; i < 4; i++)	
-            .col-md-6
+            .col-md-6.col-sm-6
               .pattern
-                a(href="").overlay.item-news(style=`background-image: url(img/blog/news/${num_news[i]}.jpg);`)
+                a.overlay.item-news(href="#", style=`background-image: url(img/blog/news/${num_news[i]}.jpg);`)
                   .item-news-content
                     h3.item-title-middle #{title_news1[i]}
                     span.date 21/06/2018
