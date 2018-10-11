@@ -1,4 +1,6 @@
 .type-one
+  .item-title
+    min-height: 230px
   &-header
     margin-bottom: $gutter/2
   .item-social, .date, .item-comments-count
@@ -28,3 +30,19 @@
     &:hover
       color: $accent
       text-decoration: underline
+      
+.type-aside
+  margin-bottom: $gutter
+  &:last-child
+    margin-bottom: 0
+  .item-social, .date, .item-comments-count
+    color: #ffffff
+
+.type-title
+  width: 80%
+  &-aside
+    line-height: 1.2
+    width: 80%
+    a
+      font-size: 15px  
+      font-weight: 800

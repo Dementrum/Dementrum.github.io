@@ -1,0 +1,55 @@
+.main-footer
+  background-color: $dark-blue
+  padding: 25px 0
+  border-bottom: 1px solid rgba(#fff, .1)
+
+.footer-menu
+  .categories__item
+    &.active
+      text-decoration: underline
+      a
+        background: none
+  .categories__link
+    font-size: 15px
+    padding: 0 10px
+    &:hover
+      text-decoration: underline
+      background: none
+
+.bottom-footer
+  background-color: $dark-blue
+  padding: 25px 0 35px
+  .logo-footer
+    display: inline-block
+  p 
+    color: rgba(#fff, .2)
+    font-size: 12px
+    margin: 5px
+.nav-soc
+  padding: 15px 0 20px
+  display: flex
+  flex-direction: row
+  justify-content: center
+  &__item
+    cursor: pointer
+    text-align: center
+    font-size: 24px
+    margin: 4px
+    width: 52px
+    height: 52px
+    line-height: 50px
+    margin-right: $gutter
+    border-radius: 10em
+    border: 1px solid rgba(#fff, .1)
+    transition: border-color .25s ease, opacity .25s ease
+    .fa
+      transition: opacity .25s ease
+      opacity: 0.75
+    &:hover
+      border-color: rgba(#fff, .35)
+.footer-copy
+  color: rgba(#fff, .45)
+  font-size: 13px
+  font-family: baron-g, sans-serif
+
+      
