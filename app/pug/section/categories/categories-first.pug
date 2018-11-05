@@ -1,0 +1,19 @@
+- let count_reviews = [26]
+- let data_reviews  = ['21/06/2018']
+- let data_type2 = ['21/06/2018', '23/07/2018']
+- let count_type2 = [50, 52]
+- let title_type = ['КРАСИВАЯ АУТЕНТИЧНАЯ БУКВА А НА СТОЛ СВОИМИ РУКАМИ', 'САМОДЕЛЬНЫЕ ДЕРЕВЯННЫЕ ВИНТЫ УВЕЛИЧЕННОЙ ПЛОТНОСТИ ДЛЯ КВАДРОКОПТЕРА']
+.ad.top-ad
+    .container-fluid
+      img.img-categories(src='img/ad-horizontal.jpg', alt='alt')
+      .row.categories-first
+        .col-md-7.categories-first__item
+          img.img-responsive.img-width(src="img/blog/diy/2.jpg" alt='alt')
+          +item-social-mod3(count_reviews[0], data_reviews[0])
+        .col-md-5.categories-first__item
+            .pattern.type-aside
+              .overlay.item-title(style=`background-image: url(img/blog/diy/1.jpg);`)
+                .item-title-content
+                  h3.type-title-aside
+                    a(href="#") #{title_type[0]}
+                  +item-social-mod3( count_type2[i], data_type2[0]) 
