@@ -1,7 +1,7 @@
 - let data_type  = ['01/05/2016' ]
 - let count_type = [ 46 ]
-- let type_num = ['2', '3']
-- let title_type = ['КРАСИВАЯ АУТЕНТИЧНАЯ БУКВА А НА СТОЛ СВОИМИ РУКАМИ', 'САМОДЕЛЬНЫЕ ДЕРЕВЯННЫЕ ВИНТЫ УВЕЛИЧЕННОЙ ПЛОТНОСТИ ДЛЯ КВАДРОКОПТЕРА']
+- let type_num = ['4', '3']
+- let title_type = ['КРУТЫЕ НАУШНИКИ', 'САМОДЕЛЬНЫЕ ДЕРЕВЯННЫЕ ВИНТЫ УВЕЛИЧЕННОЙ ПЛОТНОСТИ ДЛЯ КВАДРОКОПТЕРА']
 - let data_type2 = ['21/06/2018', '23/07/2018']
 - let count_type2 = [50, 52]
 
@@ -13,16 +13,16 @@
       .row
         .col-md-7
           .type-one-first
-            a(href="#" title="Как создать красивое освещение в виде шариков в своём доме") 
-              img.img-responsive.img-width(src="img/blog/diy/1.jpg" alt='alt')
+            a(href="#" title="Старые девайсы от Apple не перестают удивлять новыми пасхалками") 
+              img.img-responsive.img-width(src="img/blog/diy/2.jpg" alt='alt')
             +item-social-mod3( count_type[0], data_type[0])
             h3.type-title 
-              a(href="#") Как создать красивое освещение в виде шариков в своём доме
+              a(href="#") Старые девайсы от Apple не перестают удивлять новыми пасхалками
                   
         .col-md-5
           - for (let i = 0; i < 2; i++)
               .pattern.type-aside
-                .overlay.item-title(style=`background-image: url(img/blog/diy/${type_num[i]}.jpg);`)
+                .overlay.item-title(style=`background-image: url(img/blog/electronics/${type_num[i]}.jpg);`)
                   .item-title-content
                     h3.type-title-aside
                     
